@@ -15,6 +15,7 @@ const ws = new WriteStream(feed)
 const rs = new ReadStream(feed, {
   start: 0,
   live: true
+  valueEncoding: 'json'
 })
 ```
 
